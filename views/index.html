@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Downloader</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <link href="mf/manifest.json" rel="manifest" />
+    <style>
+      body {
+        background: indigo;
+        color: white;
+        text-align: center;
+      }
+      h4 {
+        background-image: linear-gradient(
+          217deg,
+          #ff0000,
+          #ff0033,
+          #ff0044,
+          #ff0055,
+          #ff0099
+        );
+        border: none;
+      }
+      i {
+        color: pink;
+      }
+      input[type="submit"] {
+        background-image: linear-gradient(
+          217deg,
+          #ff0000,
+          #ff0033,
+          #ff0044,
+          #ff0055,
+          #ff0099
+        );
+        border: none;
+        border-radius: 15px;
+        color: white;
+        height: 12vm;
+        width: 30%;
+      }
+      select,
+      input[type="text"] {
+        background: white;
+        border: solid 1px lightgreen;
+        border-radius: 10px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        text-align-last: center;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <h4>YouTube Downloader</h4>
+    <hr />
+    <b>To get started:</b>
+    <p
+      style="text-align: left; padding-left: 1%; padding-top: 1%; padding-bottom: 1%; margin-left: 4%; margin-right: 4%; border: 1px dotted white;"
+    >
+      <br /><i>1)</i> Enter the video URL in the Edit-Field below. <br /><i
+        >2)</i
+      >
+      Choose media format, it's mp4 (video) by default. <br /><i>3)</i> Now hit
+      &quot;Download!&quot; <br /><i>4)</i> Wait for a while the video / audio
+      will be downloaded...
+    </p>
+    <form method="post">
+      <div class="download">
+        <input
+          required
+          type="text"
+          class="vi"
+          name="v"
+          placeholder="Type or Paste a valid URL..."
+        /><select required name="m">
+          <optgroup label="Video:">
+            <option value="avi">AVI (Video)</option>
+            <option value="flv">FLV (Video)</option>
+            <option value="mov">MOV (Video)</option>
+            <option selected value="mp4">MP4 (Video)</option>
+            <option value="wmv">WMV (Video)</option>
+          </optgroup>
+          <optgroup label="Audio:">
+            <option value="mp3">MP3 (Audio)</option>
+            <option value="ogg">OGG (Audio)</option>
+            <option value="wav">WAV (Audio)</option>
+          </optgroup>
+        </select>
+        <br /><br />
+        <input type="submit" value="Download!" />
+      </div>
+    </form>
+    <script type="text/javascript">
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("service-worker.js")
+          .then(function(reg) {
+            alert("Service worker found and is running.");
+          })
+          .catch(function(err) {
+            alert("Server worker caught an error: \n" + err);
+          });
+      }
+    </script>
+  </body>
+</html>

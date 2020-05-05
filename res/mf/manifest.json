@@ -1,0 +1,25 @@
+{
+  "short_name": "YT Downloader",
+  "name": "YouTube Downloader",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/85623a2a-2247-4c43-a84f-defa9eff5adb%2F85623a2a-2247-4c43-a84f-defa9eff5adb_logo%2Bmedia%2Bsocial%2Bsquare%2Bvideo%2Byoutube%2Bicon-1320192913003765080.png?v=1577890087249",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "https://cdn.glitch.com/85623a2a-2247-4c43-a84f-defa9eff5adb%2F85623a2a-2247-4c43-a84f-defa9eff5adb_logo%2Bmedia%2Bsocial%2Bsquare%2Bvideo%2Byoutube%2Bicon-1320192913003765080_20200101155542206.png?v=1577890554367",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://cdn.glitch.com/85623a2a-2247-4c43-a84f-defa9eff5adb%2Flogo%2Bmedia%2Bsocial%2Bsquare%2Bvideo%2Byoutube%2Bicon-1320192913003765080.png?v=1577652132204",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#ffffff",
+  "theme_color": "#ff0000",
+  "display": "minimal-ui"
+}

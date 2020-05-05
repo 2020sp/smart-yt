@@ -1,0 +1,113 @@
+a {
+  /* Coloring */
+  color: red;
+}
+
+h1, p, a {
+  /* Font */
+  font-family: 'Arial';
+  /* Alignment */
+  text-align: center;
+  /* Styling */
+  text-decoration: none;
+}
+
+h1 {
+  /* Font */
+  font-size: 12vw;
+  /* Transition time */
+  transition: ease 0.9s;
+}
+
+h1:hover, h1:focus {
+  /* Font */
+  font-size: 16vw;
+  /* Coloring */
+  color: red;
+  /* Transition time */
+  transtion: ease 0.75s;
+  /* Letter spacing */
+  letter-spacing: 1vw ;
+}
+
+p, a {
+  /* Font */
+  font-size: 3vw;
+}
+
+div.download {
+  /* Sizing */
+  width: 100%;
+  /* Alignment */
+  text-align: center;
+}
+
+input, select {
+  /* Border */
+  outline: none;
+}
+
+input[type='text'] {
+  /* Font */
+  font-family: 'Arial';
+  font-size: 5vw;
+  /* Coloring */
+  background-color: #eeeeee;
+  color: black;
+  /* Sizing */
+  height: 12vw;
+  width: 60%;
+  /* Padding and margin */
+  padding: 0;
+  padding-left: 2%;
+  margin: 0;
+  /* Border */
+  border: none;
+  border-radius: 10px 0 0 10px;
+}
+
+input[type='submit'] {
+  /* Font */
+  font-family: 'Arial';
+  font-size: 5vw;
+  /* Coloring */
+  background-image: linear-gradient(217deg,#ff0000,#ff0033,#ff0044,#ff0055,#ff0099);
+  color: white;
+  /* Sizing */
+  height: 12vw;
+  width: 30%;
+  /* Padding and margin */
+  padding: 0;
+  margin: 0;
+  /* Border */
+  border: none;
+  border-radius: 0 10px 10px 0;
+}
+
+select {
+  /* Font */
+  font-family: 'Arial';
+  font-size: 5vw;
+  /* Coloring */
+  background-color: #eeeeee;
+  color: black;
+  /* Sizing */
+  height: 12vw;
+  width: 33%;
+  /* Padding and margin */
+  padding: 0;
+  padding-left: 1.5%;
+  margin: 0;
+  /* Border */
+  border: none;
+  border-radius: 10px;
+  /* Dropdown arrow */
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  appearance:none;
+}
+
+input:focus, input:hover, select:hover, select:focus {
+  /* Coloring */
+  box-shadow: 0 0 1vw 1vw rgba(255,15,30,0.25);
+}
